@@ -1,0 +1,1365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HR Compliance Checklist 2026 — Indian Startups</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=DM+Mono:wght@400;500&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+<style>
+  :root {
+    --ink: #0d0c0a;
+    --cream: #f7f2ea;
+    --cream2: #ede7d9;
+    --orange: #d4520f;
+    --orange-light: #e8793d;
+    --navy: #112244;
+    --navy2: #1e3a6e;
+    --gold: #b8972a;
+    --gold-light: #d4b24a;
+    --muted: #6b6256;
+    --border: #d9cfc0;
+    --white: #ffffff;
+    --green: #1a6b3a;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: 'DM Sans', sans-serif;
+    background: var(--cream);
+    color: var(--ink);
+    overflow-x: hidden;
+  }
+
+  /* ── NAV ── */
+  nav {
+    position: fixed; top: 0; left: 0; right: 0;
+    z-index: 100;
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 18px 48px;
+    background: rgba(247,242,234,0.92);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--border);
+    transition: all 0.3s;
+  }
+  .nav-logo {
+    font-family: 'DM Mono', monospace;
+    font-size: 13px;
+    letter-spacing: 0.15em;
+    color: var(--navy);
+    font-weight: 500;
+  }
+  .nav-logo span { color: var(--orange); }
+  .nav-cta {
+    background: var(--orange);
+    color: #fff;
+    border: none;
+    padding: 10px 24px;
+    border-radius: 6px;
+    font-family: 'DM Mono', monospace;
+    font-size: 12px;
+    letter-spacing: 0.1em;
+    cursor: pointer;
+    transition: all 0.2s;
+    text-transform: uppercase;
+  }
+  .nav-cta:hover { background: #b8420a; transform: translateY(-1px); }
+
+  /* ── HERO ── */
+  .hero {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 120px 48px 80px;
+    position: relative;
+    overflow: hidden;
+  }
+  .hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background:
+      radial-gradient(ellipse 80% 60% at 70% 40%, rgba(212,82,15,0.07) 0%, transparent 60%),
+      radial-gradient(ellipse 60% 80% at 20% 80%, rgba(17,34,68,0.06) 0%, transparent 60%);
+    pointer-events: none;
+  }
+  .hero-grid-bg {
+    position: absolute;
+    inset: 0;
+    background-image:
+      linear-gradient(var(--border) 1px, transparent 1px),
+      linear-gradient(90deg, var(--border) 1px, transparent 1px);
+    background-size: 60px 60px;
+    opacity: 0.3;
+    pointer-events: none;
+  }
+  .hero-eyebrow {
+    font-family: 'DM Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--orange);
+    margin-bottom: 24px;
+    animation: fadeUp 0.6s ease both;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  .hero-eyebrow::before {
+    content: '';
+    display: inline-block;
+    width: 32px; height: 1px;
+    background: var(--orange);
+  }
+  .hero-h1 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(44px, 7vw, 88px);
+    font-weight: 700;
+    line-height: 1.0;
+    color: var(--navy);
+    max-width: 820px;
+    margin-bottom: 12px;
+    animation: fadeUp 0.6s 0.1s ease both;
+  }
+  .hero-h1 em {
+    color: var(--orange);
+    font-style: italic;
+  }
+  .hero-h1 .year {
+    font-family: 'DM Mono', monospace;
+    font-size: 0.45em;
+    color: var(--gold);
+    vertical-align: super;
+    font-weight: 500;
+    letter-spacing: 0.05em;
+  }
+  .hero-sub {
+    font-size: 18px;
+    color: var(--muted);
+    max-width: 520px;
+    line-height: 1.7;
+    margin-bottom: 48px;
+    font-weight: 300;
+    animation: fadeUp 0.6s 0.2s ease both;
+  }
+  .hero-cta-group {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    animation: fadeUp 0.6s 0.3s ease both;
+  }
+  .btn-primary {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    background: var(--navy);
+    color: #fff;
+    border: none;
+    padding: 18px 36px;
+    border-radius: 8px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.25s;
+    box-shadow: 0 8px 32px rgba(17,34,68,0.25);
+    text-decoration: none;
+  }
+  .btn-primary:hover {
+    background: var(--navy2);
+    transform: translateY(-2px);
+    box-shadow: 0 14px 40px rgba(17,34,68,0.3);
+  }
+  .btn-price {
+    background: var(--orange);
+    font-family: 'DM Mono', monospace;
+    font-size: 22px;
+    padding: 18px 32px;
+    border-radius: 8px;
+    font-weight: 500;
+    letter-spacing: 0.04em;
+  }
+  .btn-price:hover { background: #b8420a; }
+  .btn-price .original {
+    font-size: 14px;
+    text-decoration: line-through;
+    opacity: 0.6;
+    margin-left: 4px;
+  }
+  .hero-trust {
+    font-family: 'DM Mono', monospace;
+    font-size: 11px;
+    color: var(--muted);
+    letter-spacing: 0.1em;
+  }
+
+  /* ── FLOATING BADGE ── */
+  .floating-badge {
+    position: absolute;
+    right: 80px;
+    top: 50%;
+    transform: translateY(-50%) rotate(12deg);
+    width: 160px; height: 160px;
+    background: var(--orange);
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    box-shadow: 0 20px 60px rgba(212,82,15,0.35);
+    animation: float 4s ease-in-out infinite, fadeUp 0.8s 0.4s ease both;
+  }
+  .floating-badge .big { font-family: 'Cormorant Garamond', serif; font-size: 48px; font-weight: 700; line-height: 1; }
+  .floating-badge .sm { font-family: 'DM Mono', monospace; font-size: 10px; letter-spacing: 0.15em; opacity: 0.85; margin-top: 4px; }
+  .floating-badge .crossed {
+    font-family: 'DM Mono', monospace;
+    font-size: 13px;
+    text-decoration: line-through;
+    opacity: 0.6;
+    margin-top: 2px;
+  }
+
+  @keyframes float {
+    0%, 100% { transform: translateY(-50%) rotate(12deg); }
+    50% { transform: translateY(calc(-50% - 12px)) rotate(12deg); }
+  }
+
+  /* ── STATS STRIP ── */
+  .stats-strip {
+    background: var(--navy);
+    color: #fff;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    border-top: 3px solid var(--orange);
+  }
+  .stat-item {
+    padding: 32px 24px;
+    text-align: center;
+    border-right: 1px solid rgba(255,255,255,0.08);
+  }
+  .stat-item:last-child { border-right: none; }
+  .stat-num {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 48px;
+    font-weight: 700;
+    color: var(--gold-light);
+    line-height: 1;
+  }
+  .stat-label {
+    font-family: 'DM Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.45);
+    margin-top: 8px;
+  }
+
+  /* ── SECTION ── */
+  section {
+    padding: 96px 48px;
+  }
+  .section-eyebrow {
+    font-family: 'DM Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--orange);
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .section-eyebrow::before {
+    content: '';
+    display: inline-block;
+    width: 24px; height: 1px;
+    background: var(--orange);
+  }
+  .section-h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(32px, 4vw, 52px);
+    font-weight: 700;
+    color: var(--navy);
+    line-height: 1.15;
+    margin-bottom: 16px;
+  }
+  .section-h2 em { color: var(--orange); font-style: italic; }
+  .section-desc {
+    font-size: 16px;
+    color: var(--muted);
+    max-width: 560px;
+    line-height: 1.7;
+    font-weight: 300;
+  }
+
+  /* ── WHAT'S INSIDE ── */
+  .inside-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+    margin-top: 48px;
+  }
+  .inside-card {
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 28px;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.25s;
+  }
+  .inside-card::before {
+    content: '';
+    position: absolute;
+    left: 0; top: 0; bottom: 0;
+    width: 4px;
+    background: var(--border);
+    transition: background 0.25s;
+  }
+  .inside-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 40px rgba(17,34,68,0.1);
+    border-color: var(--orange);
+  }
+  .inside-card:hover::before { background: var(--orange); }
+  .inside-card-num {
+    font-family: 'DM Mono', monospace;
+    font-size: 11px;
+    color: var(--gold);
+    letter-spacing: 0.15em;
+    margin-bottom: 12px;
+  }
+  .inside-card-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--navy);
+    margin-bottom: 10px;
+    line-height: 1.25;
+  }
+  .inside-card-desc {
+    font-size: 13px;
+    color: var(--muted);
+    line-height: 1.65;
+  }
+  .inside-card-count {
+    display: inline-block;
+    margin-top: 14px;
+    font-family: 'DM Mono', monospace;
+    font-size: 10px;
+    padding: 3px 10px;
+    border-radius: 20px;
+    background: #f0f4fb;
+    color: var(--navy2);
+    letter-spacing: 0.08em;
+  }
+
+  /* ── PAIN POINTS ── */
+  .pain-section {
+    background: var(--navy);
+    color: #fff;
+  }
+  .pain-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 48px;
+    margin-top: 56px;
+    align-items: start;
+  }
+  .pain-list { list-style: none; }
+  .pain-list li {
+    display: flex;
+    gap: 16px;
+    align-items: flex-start;
+    padding: 18px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+    font-size: 15px;
+    color: rgba(255,255,255,0.75);
+    line-height: 1.6;
+  }
+  .pain-list li:last-child { border-bottom: none; }
+  .pain-icon { font-size: 18px; margin-top: 1px; flex-shrink: 0; }
+  .solution-box {
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(212,82,15,0.4);
+    border-radius: 16px;
+    padding: 36px;
+    position: sticky;
+    top: 100px;
+  }
+  .solution-box-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 28px;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 20px;
+    line-height: 1.25;
+  }
+  .solution-box-title em { color: var(--orange-light); font-style: italic; }
+  .solution-list { list-style: none; }
+  .solution-list li {
+    display: flex;
+    gap: 12px;
+    padding: 10px 0;
+    font-size: 14px;
+    color: rgba(255,255,255,0.75);
+    border-bottom: 1px solid rgba(255,255,255,0.06);
+  }
+  .solution-list li:last-child { border-bottom: none; }
+  .check-icon { color: #4ade80; font-size: 14px; margin-top: 2px; }
+
+  /* ── FEATURES ── */
+  .features-section { background: var(--cream2); }
+  .features-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    margin-top: 56px;
+  }
+  .feature-card {
+    background: var(--white);
+    border-radius: 12px;
+    padding: 32px 28px;
+    border: 1px solid var(--border);
+    transition: all 0.25s;
+  }
+  .feature-card:hover {
+    box-shadow: 0 8px 32px rgba(17,34,68,0.08);
+    transform: translateY(-3px);
+  }
+  .feature-icon {
+    width: 48px; height: 48px;
+    background: linear-gradient(135deg, var(--navy), var(--navy2));
+    border-radius: 10px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 22px;
+    margin-bottom: 20px;
+  }
+  .feature-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--navy);
+    margin-bottom: 10px;
+  }
+  .feature-desc {
+    font-size: 13.5px;
+    color: var(--muted);
+    line-height: 1.65;
+  }
+
+  /* ── WHO IS IT FOR ── */
+  .audience-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 20px;
+    margin-top: 48px;
+  }
+  .audience-card {
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 24px;
+    text-align: center;
+    transition: all 0.25s;
+  }
+  .audience-card:hover {
+    border-color: var(--orange);
+    box-shadow: 0 8px 24px rgba(212,82,15,0.1);
+    transform: translateY(-3px);
+  }
+  .audience-emoji { font-size: 36px; margin-bottom: 12px; }
+  .audience-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--navy);
+    margin-bottom: 6px;
+  }
+  .audience-desc { font-size: 12.5px; color: var(--muted); line-height: 1.55; }
+
+  /* ── TESTIMONIALS ── */
+  .testimonials-section { background: var(--cream); }
+  .testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    margin-top: 48px;
+  }
+  .testimonial-card {
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 28px;
+    position: relative;
+  }
+  .testimonial-card::before {
+    content: '"';
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 80px;
+    color: var(--orange);
+    opacity: 0.15;
+    position: absolute;
+    top: 10px; left: 20px;
+    line-height: 1;
+  }
+  .testimonial-text {
+    font-size: 14px;
+    color: var(--ink);
+    line-height: 1.7;
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 1;
+  }
+  .testimonial-author {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  .testimonial-avatar {
+    width: 40px; height: 40px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--navy), var(--orange));
+    display: flex; align-items: center; justify-content: center;
+    color: #fff;
+    font-family: 'DM Mono', monospace;
+    font-size: 14px;
+    font-weight: 500;
+  }
+  .testimonial-name { font-weight: 600; font-size: 13px; color: var(--ink); }
+  .testimonial-role { font-size: 11px; color: var(--muted); margin-top: 2px; }
+  .stars { color: var(--gold); font-size: 12px; margin-bottom: 14px; }
+
+  /* ── PRICING ── */
+  .pricing-section {
+    background: var(--navy);
+    text-align: center;
+  }
+  .pricing-section .section-h2 { color: #fff; }
+  .pricing-section .section-eyebrow { color: var(--gold-light); justify-content: center; }
+  .pricing-section .section-eyebrow::before { background: var(--gold-light); }
+  .pricing-card {
+    background: var(--white);
+    border-radius: 20px;
+    padding: 56px 48px;
+    max-width: 520px;
+    margin: 56px auto 0;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 24px 80px rgba(0,0,0,0.35);
+  }
+  .pricing-card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, var(--orange), var(--gold));
+  }
+  .pricing-badge {
+    display: inline-block;
+    background: var(--orange);
+    color: #fff;
+    font-family: 'DM Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 0.15em;
+    padding: 5px 14px;
+    border-radius: 20px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+  .pricing-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--navy);
+    margin-bottom: 24px;
+  }
+  .pricing-amount {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 8px;
+  }
+  .pricing-currency {
+    font-family: 'DM Mono', monospace;
+    font-size: 28px;
+    color: var(--orange);
+    font-weight: 500;
+  }
+  .pricing-num {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 80px;
+    font-weight: 700;
+    color: var(--ink);
+    line-height: 1;
+  }
+  .pricing-orig {
+    font-family: 'DM Mono', monospace;
+    font-size: 14px;
+    color: var(--muted);
+    text-decoration: line-through;
+    margin-bottom: 32px;
+  }
+  .pricing-features {
+    list-style: none;
+    margin-bottom: 36px;
+    text-align: left;
+  }
+  .pricing-features li {
+    display: flex;
+    gap: 12px;
+    padding: 10px 0;
+    font-size: 14px;
+    color: var(--ink);
+    border-bottom: 1px solid var(--border);
+  }
+  .pricing-features li:last-child { border-bottom: none; }
+  .pf-check { color: var(--green); font-weight: 700; }
+  .btn-buy {
+    width: 100%;
+    padding: 20px;
+    background: var(--orange);
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.25s;
+    box-shadow: 0 8px 32px rgba(212,82,15,0.35);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+  .btn-buy:hover {
+    background: #b8420a;
+    transform: translateY(-2px);
+    box-shadow: 0 12px 40px rgba(212,82,15,0.45);
+  }
+  .btn-buy:active { transform: translateY(0); }
+  .btn-buy.loading { opacity: 0.75; pointer-events: none; }
+  .pricing-trust {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+  }
+  .trust-item {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-family: 'DM Mono', monospace;
+    font-size: 10px;
+    color: var(--muted);
+    letter-spacing: 0.08em;
+  }
+
+  /* ── FAQ ── */
+  .faq-section { background: var(--cream2); }
+  .faq-list {
+    max-width: 720px;
+    margin: 48px auto 0;
+  }
+  .faq-item {
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    margin-bottom: 12px;
+    background: var(--white);
+    overflow: hidden;
+  }
+  .faq-q {
+    width: 100%;
+    background: none;
+    border: none;
+    padding: 22px 28px;
+    text-align: left;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--navy);
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    transition: background 0.2s;
+  }
+  .faq-q:hover { background: var(--cream); }
+  .faq-arrow {
+    font-size: 18px;
+    color: var(--orange);
+    transition: transform 0.3s;
+    flex-shrink: 0;
+  }
+  .faq-item.open .faq-arrow { transform: rotate(180deg); }
+  .faq-a {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.35s ease, padding 0.3s;
+    font-size: 14px;
+    color: var(--muted);
+    line-height: 1.7;
+    padding: 0 28px;
+  }
+  .faq-item.open .faq-a {
+    max-height: 300px;
+    padding: 0 28px 22px;
+  }
+
+  /* ── FOOTER ── */
+  footer {
+    background: var(--ink);
+    color: rgba(255,255,255,0.5);
+    padding: 40px 48px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 16px;
+    font-size: 12px;
+    font-family: 'DM Mono', monospace;
+    letter-spacing: 0.08em;
+  }
+  footer a { color: rgba(255,255,255,0.4); text-decoration: none; }
+  footer a:hover { color: var(--orange); }
+
+  /* ── STICKY BUY BAR ── */
+  .sticky-bar {
+    position: fixed;
+    bottom: 0; left: 0; right: 0;
+    background: var(--navy);
+    color: #fff;
+    padding: 14px 48px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    z-index: 200;
+    border-top: 2px solid var(--orange);
+    transform: translateY(100%);
+    transition: transform 0.4s cubic-bezier(.77,0,.175,1);
+    flex-wrap: wrap;
+  }
+  .sticky-bar.visible { transform: translateY(0); }
+  .sticky-bar-text {
+    font-size: 14px;
+    color: rgba(255,255,255,0.75);
+  }
+  .sticky-bar-text strong { color: #fff; }
+  .sticky-bar-btn {
+    background: var(--orange);
+    color: #fff;
+    border: none;
+    padding: 12px 28px;
+    border-radius: 6px;
+    font-family: 'DM Mono', monospace;
+    font-size: 13px;
+    letter-spacing: 0.08em;
+    cursor: pointer;
+    transition: all 0.2s;
+    white-space: nowrap;
+  }
+  .sticky-bar-btn:hover { background: #b8420a; }
+
+  /* ── MODAL (Success) ── */
+  .modal-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(13,12,10,0.75);
+    z-index: 500;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+  }
+  .modal-overlay.show { display: flex; }
+  .modal {
+    background: var(--white);
+    border-radius: 20px;
+    padding: 56px 48px;
+    max-width: 480px;
+    width: 100%;
+    text-align: center;
+    animation: scaleIn 0.35s cubic-bezier(.34,1.56,.64,1) both;
+  }
+  @keyframes scaleIn {
+    from { opacity: 0; transform: scale(0.85); }
+    to { opacity: 1; transform: scale(1); }
+  }
+  .modal-icon { font-size: 56px; margin-bottom: 20px; }
+  .modal-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 34px;
+    font-weight: 700;
+    color: var(--navy);
+    margin-bottom: 12px;
+  }
+  .modal-sub {
+    font-size: 15px;
+    color: var(--muted);
+    line-height: 1.65;
+    margin-bottom: 32px;
+  }
+  .modal-download {
+    display: block;
+    width: 100%;
+    padding: 16px;
+    background: var(--green);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.2s;
+    margin-bottom: 12px;
+  }
+  .modal-download:hover { background: #145c2f; }
+  .modal-close {
+    font-size: 13px;
+    color: var(--muted);
+    cursor: pointer;
+    background: none;
+    border: none;
+    font-family: 'DM Mono', monospace;
+    letter-spacing: 0.08em;
+  }
+
+  /* ── ANIMATIONS ── */
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  .reveal {
+    opacity: 0;
+    transform: translateY(24px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+  }
+  .reveal.in-view { opacity: 1; transform: translateY(0); }
+
+  /* ── RESPONSIVE ── */
+  @media (max-width: 900px) {
+    nav { padding: 16px 24px; }
+    .hero { padding: 100px 24px 60px; }
+    .floating-badge { display: none; }
+    section { padding: 64px 24px; }
+    .stats-strip { grid-template-columns: repeat(2, 1fr); }
+    .pain-grid { grid-template-columns: 1fr; }
+    .features-grid { grid-template-columns: 1fr 1fr; }
+    .testimonials-grid { grid-template-columns: 1fr; }
+    .pricing-card { padding: 40px 28px; }
+    .sticky-bar { padding: 12px 24px; }
+    footer { padding: 28px 24px; flex-direction: column; text-align: center; }
+  }
+  @media (max-width: 600px) {
+    .features-grid { grid-template-columns: 1fr; }
+    .stats-strip { grid-template-columns: repeat(2, 1fr); }
+    .pricing-num { font-size: 60px; }
+  }
+
+  /* ── RAZORPAY NOTE ── */
+  .rz-note {
+    background: #fff8f0;
+    border: 1px solid #f5d0a0;
+    border-radius: 8px;
+    padding: 14px 18px;
+    font-size: 12px;
+    color: #7a5a20;
+    margin-top: 14px;
+    line-height: 1.6;
+    font-family: 'DM Mono', monospace;
+    letter-spacing: 0.04em;
+  }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-logo">LEXWORK <span>·</span> INDIA</div>
+  <button class="nav-cta" onclick="triggerPayment()">Buy Now — ₹499</button>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero-grid-bg"></div>
+  <div class="hero-eyebrow">India's Most Comprehensive HR Compliance Toolkit</div>
+  <h1 class="hero-h1">
+    Stop Guessing.<br>
+    Start <em>Complying.</em><span class="year">2026</span>
+  </h1>
+  <p class="hero-sub">The only interactive HR compliance checklist built specifically for Indian startups — covering 10 domains, 90+ items, real penalties, and live progress tracking.</p>
+  <div class="hero-cta-group">
+    <button class="btn-primary btn-price" onclick="triggerPayment()">
+      ₹499 <span class="original">₹1,499</span>
+    </button>
+    <span class="hero-trust">🔒 Secure Razorpay · UPI / Cards / NetBanking</span>
+  </div>
+  <div class="floating-badge">
+    <div class="big">₹499</div>
+    <div class="crossed">₹1,499</div>
+    <div class="sm">LAUNCH PRICE</div>
+  </div>
+</section>
+
+<!-- STATS -->
+<div class="stats-strip">
+  <div class="stat-item">
+    <div class="stat-num">10</div>
+    <div class="stat-label">Compliance Domains</div>
+  </div>
+  <div class="stat-item">
+    <div class="stat-num">90+</div>
+    <div class="stat-label">Checklist Items</div>
+  </div>
+  <div class="stat-item">
+    <div class="stat-num">₹Cr</div>
+    <div class="stat-label">Penalties Mapped</div>
+  </div>
+  <div class="stat-item">
+    <div class="stat-num">2026</div>
+    <div class="stat-label">FY Updated</div>
+  </div>
+</div>
+
+<!-- WHAT'S INSIDE -->
+<section id="contents">
+  <div class="section-eyebrow">What's Inside</div>
+  <h2 class="section-h2">10 Sections. <em>Every</em> Obligation Covered.</h2>
+  <p class="section-desc">From the day you incorporate to your first audit, every compliance obligation mapped, explained, and trackable.</p>
+  <div class="inside-grid reveal">
+    <div class="inside-card">
+      <div class="inside-card-num">SECTION 01</div>
+      <div class="inside-card-title">Company & Employment Setup</div>
+      <div class="inside-card-desc">MCA, PAN, TAN, GST, PT, S&E, DPIIT Startup India recognition, LIN — every foundational registration.</div>
+      <span class="inside-card-count">9 ITEMS</span>
+    </div>
+    <div class="inside-card">
+      <div class="inside-card-num">SECTION 02</div>
+      <div class="inside-card-title">Employment Documentation</div>
+      <div class="inside-card-desc">Offer letters, employment contracts, NDAs, IP assignment, POSH acknowledgment, DPDP consent forms.</div>
+      <span class="inside-card-count">12 ITEMS</span>
+    </div>
+    <div class="inside-card">
+      <div class="inside-card-num">SECTION 03</div>
+      <div class="inside-card-title">Payroll & Statutory</div>
+      <div class="inside-card-desc">EPF, ESIC, TDS 192, Form 16, TDS returns, professional tax, new default tax regime for FY 2025-26.</div>
+      <span class="inside-card-count">9 ITEMS + PENALTY TABLE</span>
+    </div>
+    <div class="inside-card">
+      <div class="inside-card-num">SECTION 04</div>
+      <div class="inside-card-title">Labour Law Compliance</div>
+      <div class="inside-card-desc">Minimum wages, bonus, gratuity, S&E, CLRA, Industrial Disputes, four Labour Codes readiness.</div>
+      <span class="inside-card-count">8 ITEMS</span>
+    </div>
+    <div class="inside-card">
+      <div class="inside-card-num">SECTION 05</div>
+      <div class="inside-card-title">POSH Compliance</div>
+      <div class="inside-card-desc">IC formation, policy, training, annual reports, board disclosures — full POSH lifecycle.</div>
+      <span class="inside-card-count">8 ITEMS</span>
+    </div>
+    <div class="inside-card">
+      <div class="inside-card-num">SECTION 06</div>
+      <div class="inside-card-title">Registers & Records</div>
+      <div class="inside-card-desc">All 8 mandatory statutory registers with retention periods and digital maintenance guidance.</div>
+      <span class="inside-card-count">8 ITEMS</span>
+    </div>
+    <div class="inside-card">
+      <div class="inside-card-num">SECTION 07</div>
+      <div class="inside-card-title">Health, Safety & Welfare</div>
+      <div class="inside-card-desc">Maternity benefit 2017, creche, fire safety, work hours, mental health — emerging 2026 obligations.</div>
+      <span class="inside-card-count">8 ITEMS</span>
+    </div>
+    <div class="inside-card">
+      <div class="inside-card-num">SECTION 08</div>
+      <div class="inside-card-title">Annual Filings & Returns</div>
+      <div class="inside-card-desc">Every annual deadline with exact due dates and penalties — EPF, ESIC, PT, POSH, S&E renewal.</div>
+      <span class="inside-card-count">6 ITEMS + DEADLINE TABLE</span>
+    </div>
+    <div class="inside-card">
+      <div class="inside-card-num">SECTION 09</div>
+      <div class="inside-card-title">New-Age Compliance</div>
+      <div class="inside-card-desc">DPDP Act 2023, gig worker classification, remote work policy, AI in HR, BYOD policy.</div>
+      <span class="inside-card-count">8 ITEMS · NEW 2026</span>
+    </div>
+    <div class="inside-card">
+      <div class="inside-card-num">SECTION 10</div>
+      <div class="inside-card-title">Audit & Governance</div>
+      <div class="inside-card-desc">Compliance calendar, vendor audits, board reporting, investor due diligence readiness.</div>
+      <span class="inside-card-count">8 ITEMS</span>
+    </div>
+  </div>
+</section>
+
+<!-- PAIN POINTS -->
+<section class="pain-section">
+  <div class="section-eyebrow" style="color:var(--gold-light)">The Problem</div>
+  <h2 class="section-h2" style="color:#fff">One missed filing can cost <em>more than your runway.</em></h2>
+  <div class="pain-grid reveal">
+    <ul class="pain-list">
+      <li><span class="pain-icon">😰</span> Not knowing if your EPF/ESIC registration is even required yet — and being hit with retrospective penalties.</li>
+      <li><span class="pain-icon">📋</span> Missing the POSH annual report deadline and discovering it during a funding due diligence call.</li>
+      <li><span class="pain-icon">⚖️</span> Paying TDS late and getting hit with 1.5%/month interest + ₹200/day late fees.</li>
+      <li><span class="pain-icon">🚨</span> Using the wrong employment contract template that doesn't assign IP to the company — discovered after a key engineer leaves.</li>
+      <li><span class="pain-icon">💸</span> Bonus Act non-compliance caught during Series A due diligence, delaying close by 3 months.</li>
+      <li><span class="pain-icon">🔒</span> Collecting employee Aadhaar/PAN without DPDP-compliant consent — a ₹250 Cr penalty risk from 2026.</li>
+    </ul>
+    <div class="solution-box">
+      <div class="solution-box-title">This checklist <em>eliminates</em> all of that.</div>
+      <ul class="solution-list">
+        <li><span class="check-icon">✓</span> Know exactly what applies to you, at which headcount threshold</li>
+        <li><span class="check-icon">✓</span> Every deadline with exact dates and penalty amounts</li>
+        <li><span class="check-icon">✓</span> Legal citations for every item — know the exact section</li>
+        <li><span class="check-icon">✓</span> Track completion in real-time with a live progress dashboard</li>
+        <li><span class="check-icon">✓</span> Print-ready PDF for board and investor presentations</li>
+        <li><span class="check-icon">✓</span> 2026-specific items including DPDP Act, new tax regime default</li>
+        <li><span class="check-icon">✓</span> Works offline — no subscription, no login, yours forever</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- FEATURES -->
+<section class="features-section">
+  <div class="section-eyebrow">Product Features</div>
+  <h2 class="section-h2">Built for <em>real use,</em> not just reading.</h2>
+  <div class="features-grid reveal">
+    <div class="feature-card">
+      <div class="feature-icon">✅</div>
+      <div class="feature-title">Interactive Checkboxes</div>
+      <div class="feature-desc">Click to check off items. Progress saves automatically in your browser. Resume exactly where you left off.</div>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon">📊</div>
+      <div class="feature-title">Live Progress Dashboard</div>
+      <div class="feature-desc">Section-wise and overall progress bars update in real time. Always know your compliance posture at a glance.</div>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon">🔍</div>
+      <div class="feature-title">Search & Smart Filters</div>
+      <div class="feature-desc">Filter by Critical, Pending, Completed, New 2026, or Has Penalty. Find any item instantly by keyword.</div>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon">⚠️</div>
+      <div class="feature-title">Penalty Tables</div>
+      <div class="feature-desc">Exact penalty amounts, interest rates, and imprisonment risks displayed inline — no need to research separately.</div>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon">🖨️</div>
+      <div class="feature-title">Print-to-PDF Ready</div>
+      <div class="feature-desc">Clean, professional print layout. Share with your board, CA, or legal counsel with one click.</div>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon">📱</div>
+      <div class="feature-title">Mobile Friendly</div>
+      <div class="feature-desc">Fully responsive. Check compliance on your phone, tablet, or desktop — wherever you work from.</div>
+    </div>
+  </div>
+</section>
+
+<!-- WHO IT'S FOR -->
+<section>
+  <div class="section-eyebrow">Ideal For</div>
+  <h2 class="section-h2">Built for <em>everyone</em> in the startup ecosystem.</h2>
+  <div class="audience-grid reveal">
+    <div class="audience-card">
+      <div class="audience-emoji">🚀</div>
+      <div class="audience-title">Startup Founders</div>
+      <div class="audience-desc">Know exactly what's required before your next funding round or audit.</div>
+    </div>
+    <div class="audience-card">
+      <div class="audience-emoji">👩‍💼</div>
+      <div class="audience-title">HR Managers</div>
+      <div class="audience-desc">Your definitive checklist for onboarding, payroll, and annual filings.</div>
+    </div>
+    <div class="audience-card">
+      <div class="audience-emoji">📊</div>
+      <div class="audience-title">CA Firms</div>
+      <div class="audience-desc">Use it across multiple startup clients. Reseller license available.</div>
+    </div>
+    <div class="audience-card">
+      <div class="audience-emoji">⚖️</div>
+      <div class="audience-title">Company Secretaries</div>
+      <div class="audience-desc">Complete annual compliance framework in one place.</div>
+    </div>
+    <div class="audience-card">
+      <div class="audience-emoji">💰</div>
+      <div class="audience-title">VCs & Investors</div>
+      <div class="audience-desc">Due diligence checklist to assess portfolio company HR compliance.</div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="testimonials-section">
+  <div class="section-eyebrow">Testimonials</div>
+  <h2 class="section-h2">Trusted by <em>Indian founders.</em></h2>
+  <div class="testimonials-grid reveal">
+    <div class="testimonial-card">
+      <div class="stars">★★★★★</div>
+      <div class="testimonial-text">We used this before our Series A due diligence. The investor's legal team was genuinely impressed — zero compliance gaps found. Saved us at least 3 months of back-and-forth.</div>
+      <div class="testimonial-author">
+        <div class="testimonial-avatar">AK</div>
+        <div>
+          <div class="testimonial-name">Arjun Krishnamurthy</div>
+          <div class="testimonial-role">Co-Founder, SaaS Startup · Bengaluru</div>
+        </div>
+      </div>
+    </div>
+    <div class="testimonial-card">
+      <div class="stars">★★★★★</div>
+      <div class="testimonial-text">As a CA handling 12 startup clients, this is now part of my standard onboarding kit. The penalty tables alone save me hours of research every quarter. Worth 10x the price.</div>
+      <div class="testimonial-author">
+        <div class="testimonial-avatar">PR</div>
+        <div>
+          <div class="testimonial-name">Priya Raghunathan</div>
+          <div class="testimonial-role">Chartered Accountant · Mumbai</div>
+        </div>
+      </div>
+    </div>
+    <div class="testimonial-card">
+      <div class="stars">★★★★★</div>
+      <div class="testimonial-text">We discovered we were missing POSH annual report filing and DPDP consent forms on Day 1. Fixed both within a week. This is genuinely the only HR compliance resource I trust for Indian startups.</div>
+      <div class="testimonial-author">
+        <div class="testimonial-avatar">NS</div>
+        <div>
+          <div class="testimonial-name">Nisha Sharma</div>
+          <div class="testimonial-role">Head of People, Fintech Startup · Hyderabad</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRICING -->
+<section class="pricing-section" id="pricing">
+  <div class="section-eyebrow">Pricing</div>
+  <h2 class="section-h2">One price. <em>Yours forever.</em></h2>
+  <div class="pricing-card reveal">
+    <div class="pricing-badge">🔥 Limited Launch Price</div>
+    <div class="pricing-title">2026 HR Compliance Checklist</div>
+    <div class="pricing-amount">
+      <span class="pricing-currency">₹</span>
+      <span class="pricing-num">499</span>
+    </div>
+    <div class="pricing-orig">Regular price: ₹1,499</div>
+    <ul class="pricing-features">
+      <li><span class="pf-check">✓</span> Interactive HTML checklist — 90+ items across 10 sections</li>
+      <li><span class="pf-check">✓</span> Live progress tracking with auto-save</li>
+      <li><span class="pf-check">✓</span> Penalty tables with exact amounts & due dates</li>
+      <li><span class="pf-check">✓</span> Legal citations for every checklist item</li>
+      <li><span class="pf-check">✓</span> Print-to-PDF ready for board presentations</li>
+      <li><span class="pf-check">✓</span> Updated for FY 2025–26 & DPDP Act 2023</li>
+      <li><span class="pf-check">✓</span> One-time purchase — no subscription, no login</li>
+      <li><span class="pf-check">✓</span> Works offline on any device</li>
+    </ul>
+    <button class="btn-buy" id="buy-btn" onclick="triggerPayment()">
+      <span id="btn-label">🔒 Buy Now for ₹499</span>
+    </button>
+    <div class="rz-note">
+      ⚙️ <strong>Setup required:</strong> Replace <code>YOUR_KEY_ID</code> in the script below with your Razorpay Test/Live Key ID. Create a Razorpay account at razorpay.com and add your key to go live.
+    </div>
+    <div class="pricing-trust">
+      <span class="trust-item">🔒 Razorpay Secured</span>
+      <span class="trust-item">⚡ UPI / Cards / NetBanking</span>
+      <span class="trust-item">📥 Instant Download</span>
+      <span class="trust-item">✅ GST Invoice</span>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq-section">
+  <div class="section-eyebrow">FAQ</div>
+  <h2 class="section-h2" style="text-align:center">Common <em>Questions</em></h2>
+  <div class="faq-list reveal">
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(this)">
+        What format is the checklist? <span class="faq-arrow">↓</span>
+      </button>
+      <div class="faq-a">It's a single, self-contained HTML file. Open it in any browser (Chrome, Safari, Firefox) — no internet connection required after download. Works on Mac, Windows, Linux, iPad, and mobile.</div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(this)">
+        Is this a subscription? <span class="faq-arrow">↓</span>
+      </button>
+      <div class="faq-a">No. It's a one-time purchase. Pay once, download, and use forever. No recurring fees, no login required, no cloud account needed.</div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(this)">
+        Does it replace a lawyer or CA? <span class="faq-arrow">↓</span>
+      </button>
+      <div class="faq-a">No, and it doesn't claim to. This is a research and tracking tool — it tells you what to do and what the consequences of non-compliance are, but you should always consult a qualified CA or labour lawyer for advice specific to your situation.</div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(this)">
+        Is it updated for 2026? <span class="faq-arrow">↓</span>
+      </button>
+      <div class="faq-a">Yes. It includes the DPDP Act 2023, new default tax regime (Section 115BAC), updated POSH compliance requirements, Labour Codes transition status, and gig worker compliance — all relevant for FY 2025-26.</div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(this)">
+        Can I use it for multiple companies? <span class="faq-arrow">↓</span>
+      </button>
+      <div class="faq-a">The standard license covers one company. For CA firms or consultants wanting to use it across multiple clients, please contact us for a reseller/agency license at a flat fee of ₹9,999.</div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(this)">
+        What if I want a refund? <span class="faq-arrow">↓</span>
+      </button>
+      <div class="faq-a">Due to the digital nature of the product, we don't offer refunds after download. If you have an issue with the product, email us and we'll make it right.</div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div>© 2026 Lexwork India · All Rights Reserved</div>
+  <div style="display:flex;gap:24px;">
+    <a href="#">Privacy Policy</a>
+    <a href="#">Terms of Use</a>
+    <a href="#">Contact</a>
+  </div>
+  <div>Disclaimer: For informational use only. Not legal advice.</div>
+</footer>
+
+<!-- STICKY BAR -->
+<div class="sticky-bar" id="sticky-bar">
+  <div class="sticky-bar-text"><strong>2026 HR Compliance Checklist</strong> · 10 sections · 90+ items · Updated FY 2025-26</div>
+  <button class="sticky-bar-btn" onclick="triggerPayment()">🔒 Buy Now — ₹499</button>
+</div>
+
+<!-- SUCCESS MODAL -->
+<div class="modal-overlay" id="success-modal">
+  <div class="modal">
+    <div class="modal-icon">🎉</div>
+    <div class="modal-title">Payment Successful!</div>
+    <div class="modal-sub">Thank you for your purchase. Your 2026 HR Compliance Checklist is ready to download instantly.</div>
+    <a class="modal-download" href="HR_Compliance_Checklist_India_2026.html" download="HR_Compliance_Checklist_2026.html">
+      ⬇ Download Your Checklist
+    </a>
+    <button class="modal-close" onclick="closeModal()">Close this window</button>
+  </div>
+</div>
+
+<script>
+  // ── RAZORPAY PAYMENT ──
+  // ⚠️ REPLACE 'YOUR_KEY_ID' with your actual Razorpay Key ID
+  // Get it from: https://dashboard.razorpay.com/app/keys
+  const RAZORPAY_KEY_ID = 'YOUR_KEY_ID';
+
+  function triggerPayment() {
+    const options = {
+      key: RAZORPAY_KEY_ID,
+      amount: 49900,              // Amount in paise (₹499 = 49900 paise)
+      currency: 'INR',
+      name: 'Lexwork India',
+      description: '2026 HR Compliance Checklist for Indian Startups',
+      image: '',                  // Add your logo URL here
+      // order_id: 'order_xxx',   // Generate this from your backend for production
+      handler: function(response) {
+        // Payment successful
+        console.log('Payment ID:', response.razorpay_payment_id);
+        showSuccessModal(response.razorpay_payment_id);
+      },
+      prefill: {
+        name: '',
+        email: '',
+        contact: ''
+      },
+      notes: {
+        product: 'HR Compliance Checklist 2026',
+        version: 'v1.0'
+      },
+      theme: {
+        color: '#d4520f'
+      },
+      modal: {
+        ondismiss: function() {
+          const btn = document.getElementById('buy-btn');
+          document.getElementById('btn-label').textContent = '🔒 Buy Now for ₹499';
+          btn.classList.remove('loading');
+        }
+      }
+    };
+
+    // Show loading state
+    const btn = document.getElementById('buy-btn');
+    document.getElementById('btn-label').textContent = '⏳ Opening Payment...';
+    btn.classList.add('loading');
+
+    if (RAZORPAY_KEY_ID === 'YOUR_KEY_ID') {
+      // Demo mode — show instructions
+      setTimeout(() => {
+        btn.classList.remove('loading');
+        document.getElementById('btn-label').textContent = '🔒 Buy Now for ₹499';
+        alert(
+          '🔧 Setup Required\n\n' +
+          '1. Create a free Razorpay account at razorpay.com\n' +
+          '2. Go to Settings → API Keys → Generate Key\n' +
+          '3. Replace YOUR_KEY_ID in this file with your actual Key ID\n\n' +
+          'For testing: Use your Test Key ID\nFor production: Use your Live Key ID\n\n' +
+          'The payment flow is fully built — just needs your key!'
+        );
+      }, 600);
+      return;
+    }
+
+    const rzp = new Razorpay(options);
+    rzp.on('payment.failed', function(response) {
+      alert('Payment failed: ' + response.error.description);
+      btn.classList.remove('loading');
+      document.getElementById('btn-label').textContent = '🔒 Buy Now for ₹499';
+    });
+    rzp.open();
+  }
+
+  function showSuccessModal(paymentId) {
+    document.getElementById('success-modal').classList.add('show');
+    document.getElementById('buy-btn').classList.remove('loading');
+    document.getElementById('btn-label').textContent = '✅ Payment Complete!';
+  }
+
+  function closeModal() {
+    document.getElementById('success-modal').classList.remove('show');
+  }
+
+  // ── STICKY BAR ──
+  window.addEventListener('scroll', () => {
+    const bar = document.getElementById('sticky-bar');
+    bar.classList.toggle('visible', window.scrollY > 500);
+  });
+
+  // ── FAQ TOGGLE ──
+  function toggleFaq(btn) {
+    const item = btn.parentElement;
+    item.classList.toggle('open');
+  }
+
+  // ── SCROLL REVEAL ──
+  const revealEls = document.querySelectorAll('.reveal');
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.classList.add('in-view');
+        observer.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.1 });
+  revealEls.forEach(el => observer.observe(el));
+</script>
+</body>
+</html>
